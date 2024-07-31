@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orion-service
+spec:
+  selector:
+    app: orion
+  ports:
+    - protocol: TCP
+      port: 1026
+      targetPort: 1026
+  type: NodePort
